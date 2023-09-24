@@ -1,10 +1,10 @@
 import React from 'react';
 import {BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from '/.Home';
-import AboutMe from '/.AboutMe';
-import Contact from '/.Contact';
-import Projects from '/.Projects';
-import CodeChallenge from '/.CodeChallenge';
+import Home from './Home';
+import AboutMe from './AboutMe';
+import Contact from './Contact';
+import Projects from './Projects';
+import CodeChallenge from './CodeChallenge';
 
 function App() {
   return (
