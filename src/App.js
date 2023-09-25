@@ -7,6 +7,7 @@ import Projects from './Projects';
 import CodeChallenge from './CodeChallenge';
 import './App.css';
 
+//Establishes the routes to my pages which are React components.
 function App() {
   return (
     <Router>
