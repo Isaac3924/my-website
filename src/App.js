@@ -4,7 +4,7 @@ import Home from './Home';
 import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Projects from './Projects';
-import CodeChallenge from './CodeChallenge';
+import CodeChallenges from './CodeChallenges';
 import './App.css';
 
 //Establishes the routes to my pages which are React components.
@@ -16,7 +16,7 @@ function App() {
         <Route path="/about" element={<AboutMe />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/code-challenge" element={<CodeChallenge />} />
+        <Route path="/code-challenges" element={<CodeChallenges />} />
       </Routes>
     </Router>
   );

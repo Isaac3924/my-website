@@ -40,3 +40,7 @@
 .Home-title {
   text-align: center;
 }
+
+nav {
+  text-transform: capitalize;
+}
