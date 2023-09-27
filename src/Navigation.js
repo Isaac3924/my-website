@@ -14,7 +14,7 @@ function Navigation() {
       <ul>
         {routes.map((route) => (
           location.pathname === route.path ? null : (
-            <li key={route}>
+            <li key={route.path}>
               <Link to={route.path}>{route.text}</Link>
             </li>
           )
