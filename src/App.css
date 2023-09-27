@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.Home-title {
+  text-align: center;
+}
+
+nav {
+  text-transform: capitalize;
+}
