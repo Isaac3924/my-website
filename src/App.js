@@ -5,12 +5,16 @@ import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Projects from './Projects';
 import CodeChallenges from './CodeChallenges';
+import Navigation from './Navigation';
 import './App.css';
 
 //Establishes the routes to my pages which are React components.
 function App() {
   return (
     <Router>
+      <div className="navigation">
+        <Navigation />
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
