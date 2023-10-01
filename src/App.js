@@ -5,6 +5,7 @@ import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Projects from './Projects';
 import CodeChallenges from './CodeChallenges';
+import TLDR from './projects/TLDR';
 import Navigation from './Navigation';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/code-challenges" element={<CodeChallenges />} />
+        <Route path="/projects/tldr" element={<TLDR/>} />
       </Routes>
       <div class="navigation">
         <Navigation />
