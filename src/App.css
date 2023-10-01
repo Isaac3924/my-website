@@ -37,10 +37,14 @@
   }
 }
 
-.Home-title {
+.page-title {
   text-align: center;
 }
 
 nav {
   text-transform: capitalize;
+}
+
+.page-intro{
+  text-align: center;
 }

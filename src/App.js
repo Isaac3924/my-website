@@ -19,7 +19,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/code-challenges" element={<CodeChallenges />} />
       </Routes>
-      <div className="navigation">
+      <div class="navigation">
         <Navigation />
       </div>
     </Router>
