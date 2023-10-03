@@ -12,19 +12,22 @@ import './App.css';
 //Establishes the routes to my pages which are React components.
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/code-challenges" element={<CodeChallenges />} />
-        <Route path="/projects/tldr" element={<TLDR/>} />
-      </Routes>
-      <div class="navigation">
-        <Navigation />
-      </div>
-    </Router>
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/code-challenges" element={<CodeChallenges />} />
+          <Route path="/projects/tldr" element={<TLDR/>} />
+        </Routes>
+
+        <div className="navigation">
+          <Navigation />
+        </div>
+      </Router>
+    </div>
   );
 };
 

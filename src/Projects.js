@@ -2,12 +2,12 @@ import React from "react";
 
 function Projects() {
   return (
-    <body>
-      <div class="page-head">
-        <h1 class="page-title">Projects</h1>
+    <div className="page">
+      <div className="page-head">
+        <h1 className="page-title">Projects</h1>
       </div>
-      <div class="page-list">
-        <ul class="list-projects">
+      <div className="page-list">
+        <ul className="list-projects">
           <li>
             <a href="projects/tldr">TL:DR</a>
           </li>
@@ -16,7 +16,7 @@ function Projects() {
           </li>
         </ul>
       </div>
-    </body>
+    </div>
   );
 };
 

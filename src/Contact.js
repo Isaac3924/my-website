@@ -2,12 +2,12 @@ import React from "react";
 
 function Contact() {
   return (
-    <body>
-      <div class="page-head">
-        <h1 class="page-title">Contact Me</h1>
+    <div className="page">
+      <div className="page-head">
+        <h1 className="page-title">Contact Me</h1>
       </div>
-      <div class="page-list">
-        <ul class="list-contact">
+      <div className="page-list">
+        <ul className="list-contact">
           <li>
             <a href="https://github.com/Isaac3924">GitHub</a>
           </li>
@@ -16,7 +16,7 @@ function Contact() {
           </li>
         </ul>
       </div>
-    </body>
+    </div>
   );
 };
 
