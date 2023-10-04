@@ -15,8 +15,10 @@ function Navigation() {
     setMenuVisible(!menuVisible);
   };
 
+  const isLeftMenu = location.pathname !== '/'
+
   return (
-    <nav className={`navigation ${menuVisible ? 'active' : ''}`}>
+    <nav className={`navigation ${menuVisible ? 'active' : ''} ${isLeftMenu ? 'left-menu' : ''}`}>
       <button className="toggle-menu-button" onClick={toggleMenu}>
         Menu
       </button>
