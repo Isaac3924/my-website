@@ -12,7 +12,7 @@ import './App.css';
 //Establishes the routes to my pages which are React components.
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path="/projects/tldr" element={<TLDR/>} />
         </Routes>
 
-        <div className="navigation">
+        <div className="navigation_container">
           <Navigation />
         </div>
       </Router>
