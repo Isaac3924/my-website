@@ -3,7 +3,9 @@ import React from "react";
 function CodeChallenges() {
   return (
     <div className="page">
-      <h1>Code Challenges Page</h1>
+      <div className="page-head">
+        <h1 className="page-title">Code Challenges</h1>
+      </div>
     </div>
   );
 };
