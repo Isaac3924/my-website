@@ -62,9 +62,9 @@
 }
 
 .navigation.left-menu {
-  position: fixed;
+  position: relative;
   bottom: 0px;
-  left: -200px;
+  left: -175px;
   width: 230px;
   height: 100%;
   background-color: #333;
@@ -82,7 +82,7 @@
 .left-menu .toggle-menu-button {
   position: absolute;
   top: 45%;
-  left: 87%;
+  left: 76%;
   padding: 30px 5px;
 }
 

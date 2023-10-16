@@ -1,22 +1,31 @@
-.page{
+.app{
   display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.navigation_container{
-  display: flex;
-  flex-direction: column;
-}
-
-.page-title {
-  text-align: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
 }
 
 nav {
   text-transform: capitalize;
 }
 
+.page{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  position: relative;
+}
+
+.page-title {
+  text-align: center;
+}
+
 .page-intro{
   text-align: center;
+}
+
+.page-content{
+  margin-left: 25px;
+  margin-right: 25px;
 }
