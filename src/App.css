@@ -18,7 +18,7 @@ nav {
   position: absolute;
   width: calc(100% - 55px);
   left: 55px;
-  transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
 .page.menu-visible{
