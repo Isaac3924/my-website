@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useMenu } from './MenuContext';
 import './Navigation.css';
 
 //Array of objects that hold the paths and text attributes for the comparison of route paths and displaying texts as links.
@@ -9,11 +10,7 @@ const routes = [{path: "/", text: "Home"}, {path: "/about", text: "About"}, {pat
 // a new web page, but rather, merely changes the URL displayed in the address bar and renders the corresponding component. This will save on time as we will not need to reload the entire page.
 function Navigation() {
   const location = useLocation();
-  const [menuVisible, setMenuVisible] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
-  };
+  const { menuVisible, toggleMenu } = useMenu();
 
   const isLeftMenu = location.pathname !== '/'
 

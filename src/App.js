@@ -7,26 +7,29 @@ import Projects from './Projects';
 import CodeChallenges from './CodeChallenges';
 import TLDR from './projects/TLDR';
 import Navigation from './Navigation';
+import { MenuProvider } from './MenuContext';
 import './App.css';
 
 //Establishes the routes to my pages which are React components.
 function App() {
   return (
-    <div className="app">
-      <Router>
-        <Navigation />
-        
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/code-challenges" element={<CodeChallenges />} />
-          <Route path="/projects/tldr" element={<TLDR/>} />
-        </Routes>
+    <MenuProvider>
+      <div className="app">
+        <Router>
+          <Navigation />
 
-      </Router>
-    </div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/code-challenges" element={<CodeChallenges />} />
+            <Route path="/projects/tldr" element={<TLDR/>} />
+          </Routes>
+
+        </Router>
+      </div>
+    </MenuProvider>
   );
 };
 

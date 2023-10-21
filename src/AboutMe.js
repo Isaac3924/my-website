@@ -1,8 +1,10 @@
 import React from "react";
+import { useMenu } from "./MenuContext";
 
 function AboutMe() {
+  const { menuVisible } = useMenu();
   return (
-    <div className="page">
+    <div className={`page ${menuVisible ? 'menu-visible' : ''}`}>
       <div className="page-head">
         <h1 className="page-title">About</h1>
       </div>
