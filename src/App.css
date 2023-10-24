@@ -2,7 +2,7 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
@@ -19,7 +19,6 @@ nav {
   width: calc(100% - 55px);
   left: 55px;
   transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
-  height: 100%;
 }
 
 .page.menu-visible{
@@ -34,12 +33,13 @@ nav {
   align-items: center;
   position: absolute;
   width: 100%;
-  left: 55px;
+  left: 0px;
   transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+  height: calc(100vh - 49px);
 }
 
 .page.menu-visible.home{
-  
+  height: calc(100vh - 297px);
 }
 
 .page-title {
