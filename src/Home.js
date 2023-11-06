@@ -1,16 +1,18 @@
 import React from "react";
+import { useMenu } from "./MenuContext";
 
 function Home() {
+  const { menuVisible } = useMenu();
   return (
-    <body>
-      <div class="page-head">
-        <h1 class="page-title">Isaac Alter</h1>
+    <div className={`page ${menuVisible ? 'menu-visible' : ''} home`}>
+      <div className="page-head">
+        <h1 className="page-title">Isaac Alter</h1>
       </div>
-      <div class="page-intro">
-        <h3 class="page-subtitle">Designer and Developer</h3>
-        <h3 class="page-instructions">Feel free to navigate the menu below to learn more about me.</h3>
+      <div className="page-intro">
+        <h3 className="page-subtitle">Designer and Developer</h3>
+        <h3 className="page-instructions">Feel free to navigate the menu below to learn more about me.</h3>
       </div>
-    </body>
+    </div>
   );
 };
 

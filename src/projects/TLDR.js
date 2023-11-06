@@ -1,20 +1,22 @@
 import React from "react";
+import { useMenu } from "../MenuContext";
 
 function TLDR() {
+  const { menuVisible } = useMenu();
   return (
-    <body>
-      <div class="project">
+    <div className={`page ${menuVisible ? 'menu-visible' : ''}`}>
+      <div className="project">
         
-        <div class="project-title">
-          <div class="page-head">
-            <h1 class="page-title">TL:DR</h1>
+        <div className="project-title">
+          <div className="page-head">
+            <h1 className="page-title">TL:DR</h1>
           </div>
         </div>
 
-        <div class="project-info">
+        <div className="project-info">
 
-          <div class="project-data">
-            <table class="table-tldr">
+          <div className="project-data">
+            <table className="table-tldr">
               <tbody>
 
                 <tr>
@@ -61,14 +63,14 @@ function TLDR() {
             </table>
           </div>
 
-          <div class="project-desciption">
+          <div className="project-desciption">
             <p>
               This is where the project description will be.
             </p>
 
-            <div class="project-website">
-              <div class="link-wrapper">
-                <div class="link">
+            <div className="project-website">
+              <div className="link-wrapper">
+                <div className="link">
                   <a href="https://tldr-tos.vercel.app/">Visit Website</a>
                 </div>
               </div>
@@ -76,14 +78,14 @@ function TLDR() {
           </div>
         </div>
 
-        <div class="project-media">
+        <div className="project-media">
           <h6>Login</h6>
-          <div class="project-content-wrapper">
+          <div className="project-content-wrapper">
             <img alt="Login screenshot"></img>
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 
