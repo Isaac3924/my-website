@@ -1,5 +1,6 @@
 import React from "react";
 import { useMenu } from "./MenuContext";
+import ParticleBackground from "./components/particleBackground";
 
 function Home() {
   const { menuVisible } = useMenu();
@@ -12,6 +13,7 @@ function Home() {
         <h3 className="page-subtitle">Designer and Developer</h3>
         <h3 className="page-instructions">Feel free to navigate the menu below to learn more about me.</h3>
       </div>
+      <ParticleBackground />
     </div>
   );
 };
