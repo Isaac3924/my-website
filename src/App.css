@@ -20,6 +20,7 @@ nav {
   width: calc(100% - 55px);
   left: 55px;
   transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .page.menu-visible{
@@ -32,11 +33,15 @@ nav {
   flex-direction: column;
   flex: 1;
   align-items: center;
-  position: absolute;
+  position: relative;
   width: 100%;
   left: 0px;
   transition: bottom 0.3s ease-in-out, width 0.3s ease-in-out;
-  height: calc(100vh - 42px);
+  height: auto;
+  text-align: center;
+  color: white;
+  top: 175px;
+  font-size: large;
 }
 
 .page.menu-visible.home{
@@ -54,4 +59,20 @@ nav {
 .page-content{
   margin-left: 25px;
   margin-right: 25px;
+}
+
+.page.home .page-head{
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1px white;
+}
+
+.page.home .page-head > h1{
+  margin: 5px;
+}
+
+.home-intro .page-subtitle{
+  width: 380px;
+  margin: 0px;
 }

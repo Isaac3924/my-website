@@ -8,6 +8,7 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 .toggle-menu-button {
