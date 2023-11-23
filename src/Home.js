@@ -8,7 +8,7 @@ function Home() {
     <div className={`page ${menuVisible ? 'menu-visible' : ''} home`}>
       <div className="page-head">
         <h1 className="home-title1">Hello, my name is Isaac Alter</h1>
-        <h1 className="home-title2">Thank you for visitng my site</h1>
+        <h1 className="home-title2">Thank you for visiting my site</h1>
       </div>
       <div className="home-intro">
         <p className="page-subtitle">I'm a developer and designer with a specialized interest in Back-End development</p>
