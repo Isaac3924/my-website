@@ -123,12 +123,10 @@ nav {
 
 body > div#root > div.app > div#aboutMe.page.aboutme > div.page-text{
   opacity: 0;
-  
 }
 
 body.toggled > div#root > div.app > div#aboutMe.page.aboutme > div.page-text{
   opacity: 1;
-  
 }
 
 .page-background{
@@ -168,4 +166,8 @@ body.toggled > div#root > div.app > div#aboutMe.page.aboutme > div.page-text{
 .home-intro .page-subtitle{
   width: 380px;
   margin: 0px;
+}
+
+.page.aboutme > .page-text{
+  transition: opacity 1200ms ease;
 }
