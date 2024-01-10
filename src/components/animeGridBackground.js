@@ -18,7 +18,10 @@ const GridBackground = () => {
       const handleOnClick = index => {
         toggled = !toggled;
 
-        document.body.classList.toggle("toggled");
+        const aboutMeElement = document.getElementById('aboutMe');
+        if (aboutMeElement) {
+          aboutMeElement.classList.toggle("toggled", toggled);
+        }
         
         anime(
           {

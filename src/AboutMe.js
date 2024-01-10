@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useMenu } from "./MenuContext";
 import GridBackground from "./components/animeGridBackground";
 
 function AboutMe() {
   const { menuVisible } = useMenu();
+  const [toggled, setToggled] = useState(false);
+
+  const handleOnClick = () => {
+    setToggled((prevToggled) => !prevToggled);
+  };
+
   return (
-    <div id="aboutMe" className={`page ${menuVisible ? 'menu-visible' : ''} aboutme`}>
+    <div id="aboutMe" className={`page ${menuVisible ? 'menu-visible' : ''} ${toggled ? 'toggled' : ''}`}>
       <div className="page-text">
         <div className="page-head">
           <h1 className="page-title">About</h1>
@@ -15,8 +21,8 @@ function AboutMe() {
           <p className="about-contact">If you would like to speak further, feel free to reach me via my LinkedIn at the top right of the page, or email me here. Feel free to look at my projects page to see my work, see what sorts of code challenges I am taking up and practicing, or browse my GitHub also reachable from the top right of the page.</p>
         </div>
       </div>
-      <div className="page-background">
-        <GridBackground/>
+      <div className="page-background" onClick={handleOnClick}>
+        <GridBackground toggled={toggled} handleOnClick={handleOnClick} />
       </div>
     </div>
   );
