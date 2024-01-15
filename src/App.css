@@ -101,8 +101,8 @@ nav {
 }
 
 :root {
-  --g1: rgb(177, 0, 0);
-  --g2: rgb(225, 141, 14);
+  --g1: rgb(54, 78, 199);
+  --g2: rgb(0, 229, 241);
 }
 
 @keyframes background-pan{
@@ -181,4 +181,53 @@ div#aboutMe.page.toggled > div.page-text{
 
 #aboutMe > .page-text{
   transition: opacity 1200ms ease;
+}
+
+@keyframes background-breathe {
+  0% {
+    background-size: 95% 95%;
+    background-position: center center;
+  }
+
+  50% {
+    background-size: 150% 150%;
+    background-position: center center;
+  }
+
+  100% {
+    background-size: 95% 95%;
+    background-position: center center;
+  }
+}
+
+.about-summary{
+  margin-top: 40px;
+  padding: 20px;
+  border-style: dashed;
+  border-color: white;
+  border-radius: 5px;
+  animation: background-breathe 10s linear infinite;
+  background: radial-gradient(
+    circle,
+    var(--g2),
+    var(--g1),
+    var(--g2)
+  );
+  background-size: 95% 95%;
+}
+
+.about-contact{
+  margin-top: 40px;
+  padding: 20px;
+  border-style: dashed;
+  border-color: white;
+  border-radius: 5px;
+  animation: background-breathe 10s linear infinite;
+  background: radial-gradient(
+    circle,
+    var(--g1),
+    var(--g2),
+    var(--g1)
+  );
+  background-size: 95% 95%;
 }
