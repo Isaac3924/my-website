@@ -78,7 +78,7 @@ body {
 }
 
 .navigation.left-menu {
-  left: -175px;
+  left: -171px;
   width: 230px;
   height: 100vh;
   align-items: flex-start;
@@ -91,9 +91,7 @@ body {
 
 .left-menu .toggle-menu-button {
   position: absolute;
-  left: 76%;
-  padding-left: 5px;
-  padding-right: 5px;
+  left: 75%;
   width: auto;
   height: 100%;
 }
