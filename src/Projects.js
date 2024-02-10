@@ -22,13 +22,12 @@ function Projects() {
           <div className="projects-list-viewer">
             <div className="projects-list-top-wrapper">
               <div className="projects-list-header">
-                <hr className="projects-separator"></hr>
               </div>
             </div>
             <ul className="projects-list">
-              <li>
+              <li className="project-list-element">
                 <a href="projects/tldr">
-                  <div className="projects-row">
+                  <div id="first-row" className="projects-row">
                     <div className="projects-row-left">
                       <h3>TL:DR</h3>
                     </div>
@@ -39,11 +38,47 @@ function Projects() {
                 </a>
 
               </li>
-              <li>
+              <li className="project-list-element">
                 <a href="https://www.linkedin.com/in/isaacalter/">
-                <div className="projects-row">
+                  <div className="projects-row">
                     <div className="projects-row-left">
                       <h3>LinkedIn</h3>
+                    </div>
+                    <div className="projects-row-right">
+                      <h4>REPLACE_ME</h4>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li className="project-list-element">
+                <a href="https://www.linkedin.com/in/isaacalter/">
+                  <div className="projects-row">
+                    <div className="projects-row-left">
+                      <h3>Whether-Sweater</h3>
+                    </div>
+                    <div className="projects-row-right">
+                      <h4>REPLACE_ME</h4>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li className="project-list-element">
+                <a href="https://www.linkedin.com/in/isaacalter/">
+                  <div className="projects-row">
+                    <div className="projects-row-left">
+                      <h3>Viewing Party</h3>
+                    </div>
+                    <div className="projects-row-right">
+                      <h4>REPLACE_ME</h4>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li className="project-list-element">
+                <a href="https://www.linkedin.com/in/isaacalter/">
+                  <div className="projects-row">
+                    <div className="projects-row-left">
+                      <h3>Little Esty Shop</h3>
                     </div>
                     <div className="projects-row-right">
                       <h4>REPLACE_ME</h4>
