@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { useMenu } from "./MenuContext";
+import TLDR from './pictures/profile.png';
+import OTHER from './pictures/github.png'
 
 function Projects() {
   const { menuVisible } = useMenu();
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
+  const projects_Array = [
+    ["tldr", "TL:DR", "Python Web Application"],
+    ["address_here", "LinkedIn", "REPLACE_ME"],
+    ["address_here", "Whether-Sweater", "REPLACE_ME"],
+    ["address_here", "Viewing Party", "REPLACE_ME"],
+    ["address_here", "Little Esty Shop", "REPLACE_ME"]
+  ]
+
   return (
     <div id="projects" className={`page ${menuVisible ? 'menu-visible' : ''}`}>
       <div className="page-content">
@@ -12,9 +32,14 @@ function Projects() {
         <div className="projects">
           <div className="projects-image-viewer">
             <div className="projects-image-viewer-content">
-              <div className="projects-image-wrapper">
-                <div id="TLDR" className="projects-image-size">
-
+              <div className="projects-image-wrapper" style={{ opacity: hoveredIndex === 0 ? 1 : 0 }}>
+                <div id="TLDR-picture" className="projects-image-size">
+                  <img className="TLDR-image" src={TLDR} alt="TLDR_image"/>
+                </div>
+              </div>
+              <div id="OTHER-wrapper" className="projects-image-wrapper" style={{ opacity: hoveredIndex === 1 ? 1 : 0 }}>
+                <div id="OTHER-picture" className="projects-image-size">
+                  <img className="OTHR-image" src={OTHER} alt="TLDR_image"/>
                 </div>
               </div>
             </div>
@@ -25,67 +50,23 @@ function Projects() {
               </div>
             </div>
             <ul className="projects-list">
-              <li className="project-list-element">
-                <a href="projects/tldr">
-                  <div id="first-row" className="projects-row">
-                    <div className="projects-row-left">
-                      <h3>TL:DR</h3>
+              {projects_Array.map((slug, index) => (
+                <li key={index} className="project-list-element" onMouseEnter={
+                  () => handleMouseEnter(index)
+                } onMouseLeave={handleMouseLeave}
+                >
+                  <a href={`projects/${slug[0]}`}>
+                    <div className="projects-row">
+                      <div className="projects-row-left">
+                        <h3>{`${slug[1]}`}</h3>
+                      </div>
+                      <div className="projects-row-right">
+                        <h4>{`${slug[2]}`}</h4>
+                      </div>
                     </div>
-                    <div className="projects-row-right">
-                      <h4>Python Web Application</h4>
-                    </div>
-                  </div>
-                </a>
-
-              </li>
-              <li className="project-list-element">
-                <a href="https://www.linkedin.com/in/isaacalter/">
-                  <div className="projects-row">
-                    <div className="projects-row-left">
-                      <h3>LinkedIn</h3>
-                    </div>
-                    <div className="projects-row-right">
-                      <h4>REPLACE_ME</h4>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li className="project-list-element">
-                <a href="https://www.linkedin.com/in/isaacalter/">
-                  <div className="projects-row">
-                    <div className="projects-row-left">
-                      <h3>Whether-Sweater</h3>
-                    </div>
-                    <div className="projects-row-right">
-                      <h4>REPLACE_ME</h4>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li className="project-list-element">
-                <a href="https://www.linkedin.com/in/isaacalter/">
-                  <div className="projects-row">
-                    <div className="projects-row-left">
-                      <h3>Viewing Party</h3>
-                    </div>
-                    <div className="projects-row-right">
-                      <h4>REPLACE_ME</h4>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li className="project-list-element">
-                <a href="https://www.linkedin.com/in/isaacalter/">
-                  <div className="projects-row">
-                    <div className="projects-row-left">
-                      <h3>Little Esty Shop</h3>
-                    </div>
-                    <div className="projects-row-right">
-                      <h4>REPLACE_ME</h4>
-                    </div>
-                  </div>
-                </a>
-              </li>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

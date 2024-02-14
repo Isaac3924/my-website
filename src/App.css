@@ -390,3 +390,15 @@ a {
 .project-list-element{
   height: 32%;
 }
+
+.projects-image-size{
+  width: 50%;
+}
+
+.TLDR-image{
+  width: 100%;
+}
+
+.projects-image-wrapper{
+  transition: opacity 0.75s ease-in-out;
+}
