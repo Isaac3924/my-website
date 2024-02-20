@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { useMenu } from "./MenuContext";
-import TLDR from './pictures/profile.png';
+import TLDR from './pictures/tldr.png';
 import OTHER from './pictures/github.png'
 
 function Projects() {
   const { menuVisible } = useMenu();
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [backgroundPositionIndex, setBackgroundPositionIndex] = useState(0);
 
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
+    setBackgroundPositionIndex(index);
   };
 
   const handleMouseLeave = () => {
@@ -70,6 +72,16 @@ function Projects() {
             </ul>
           </div>
         </div>
+      </div>
+      <div id="projects-background" className="page-background" style={
+        { backgroundSize: hoveredIndex !== null ? '4% 6%' : '5% 7%', 
+          backgroundPosition: backgroundPositionIndex === 0 ? '0% -20%' :
+                              backgroundPositionIndex === 1 ? '0% -40%' :
+                              backgroundPositionIndex === 2 ? '0% -60%' :
+                              backgroundPositionIndex === 3 ? '0% -80%' :
+                              backgroundPositionIndex === 4 ? '0% -100%' : ''
+        }}>
+        
       </div>
     </div>
   );
