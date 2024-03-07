@@ -3,7 +3,7 @@ import anime from "animejs";
 
 //const wrapper = document.getElementById("tiles");
 
-const GridBackground = () => {
+const TestBackground = () => {
   const wrapperRef = useRef(null);
 
   useEffect(() => {
@@ -73,4 +73,4 @@ const GridBackground = () => {
   return <div id="tiles" className="grid-background" ref={wrapperRef}></div>
 };
 
-export default GridBackground;
+export default TestBackground;
