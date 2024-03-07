@@ -374,6 +374,7 @@ a {
 .projects-row-left{
   padding-left: 10px;
   transition: 0.75s ease-in-out;
+  text-decoration: underline;
 }
 
 .projects-row:hover .projects-row-left{
@@ -412,7 +413,7 @@ a {
   justify-content: center;
 }
 
-.TLDR-image{
+.project-image{
   height: 100%;
 }
 
