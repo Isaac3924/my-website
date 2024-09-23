@@ -418,16 +418,16 @@ a {
 }
 
 ::-webkit-scrollbar-track{
-  background: #393939
+  background: #afafaf;
 }
 
 ::-webkit-scrollbar-thumb{
-  background: #606060;
+  background: #393939;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background: #848484;
+  background: #5f5f5f;
   border-radius: 4px;
 }
 
@@ -439,6 +439,7 @@ a {
   background: #848484;
   border: 5px solid black;
   border-radius: 12px;
+  max-width: 69%;
 }
 
 .project-image{
@@ -478,3 +479,108 @@ a {
   border-radius: 0px 0px 96px 96px;
 }
 
+.table-tldr{
+  width: 100%;
+  border: 2px solid;
+  border-radius: 5px;
+  background: #dfc7e5;
+}
+
+.tech-stack-table{
+  width: 100%;
+}
+
+.tech-stack-title{
+  border: 1px solid;
+  text-align: center;
+  background: #9ecae0;
+}
+
+.tech-stack-info{
+  border: 1px solid;
+  text-align: center;
+  background: #9ecae0;
+}
+
+.year-title{
+  border: 1px solid;
+  text-align: center;
+  background: #9ee0ca;
+}
+
+.year-info{
+  background: #9ee0ca;
+}
+
+.year-info-table{
+  width: 100%;
+}
+
+.year-info-text{
+  width: 100%;
+  border: 1px solid;
+  background: #d8d8d8;
+}
+
+.team-title{
+  border: 1px solid;
+  text-align: center;
+  background: #9ecae0;
+}
+
+.team-info{
+  border: 1px solid;
+  text-align: center;
+  background: #9ecae0;
+}
+
+.team-table{
+  width: 100%;
+}
+
+td{
+  border: 1px solid;
+  text-align: center;
+  background: #d8d8d8;
+}
+
+.project-description{
+  margin-top: 10px;
+  width: auto;
+}
+
+.project-summary{
+  text-align: center;
+  background: #a5daec;
+  overflow-wrap: break-word;
+  border-radius: 25px;
+  border: #ffffff 3px dashed;
+}
+
+.project-paragraph{
+  margin: 10px;
+  padding: 10px;
+}
+
+.project-links{
+  margin-top: 20px;
+  background: #ffffff;
+  border: 3px solid;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link-wrapper{
+  margin: 5px;
+  padding: 5px;
+  width: 20%;
+  background: #9ecae0;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid;
+}
+
+.hyperlink{
+  color: -webkit-link;
+  text-decoration: underline;
+}

@@ -41,59 +41,125 @@ function TLDR() {
               <tbody>
 
                 <tr>
-                  <td>
-                    <h4>Tech Stack</h4>
+                  <td className="tech-stack-title">
+                    <h4>Tech Stack:</h4>
                   </td>
 
-                  <td>
-                    <ul>
-                      <li>Python</li>
-                      <li>TypeScript</li>
-                      <li>CSS</li>
-                      <li>HTML</li>
-                    </ul>
+                  <td className="tech-stack-info">
+                    <table className="tech-stack-table">
+                      <tbody>
+                        <tr>
+                          <td>
+                            Python
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            TypeScript
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            CSS
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            HTML
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
 
                 </tr>
 
                 <tr>
-                  <td>
-                    <h4>Year</h4>
+                  <td className="year-title">
+                    <h4>Year:</h4>
                   </td>
 
-                  <td>
-                    <p>2023</p>
+                  <td className="year-info">
+                    <table className="year-info-table">
+                      <tbody>
+                        <tr className="year-info-row">
+                          <td className="year-info-text">
+                            2023
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
 
                 </tr>
 
                 <tr>
-                  <td>
-                    <h4>Team</h4>
+                  <td className="team-title">
+                    <h4>Team:</h4>
                   </td>
 
-                  <td>
-                    <ul>
-                      <li>Axel</li>
-
-
-                    </ul>
+                  <td className="team-info">
+                    <table className="team-table">
+                      <tbody>
+                        <tr>
+                          <td>
+                            Axel De La Guardia
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Elle Majors
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Hady Matar
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Conner Van Loan
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Jesus Borjas
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Chrissy Cooper
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Jason Kirchman
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
-
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div className="project-desciption">
-            <p>
-              This is where the project description will be.
-            </p>
+          <div className="project-description">
+            <div className="project-summary">
+              <p className="project-paragraph">
+                A web platform that helps you understand the terms and conditions of services you sign up for in a simpler way. Instead of having to read through long and complex legal documents, you can copy and paste them into our platform and select the things you're most concerned about, like privacy or recurring payments. Our platform will then show you a summary of how those specific things might affect you, with an overall score that helps you see how good or bad they are. We also give you suggestions for what you can do if you don't like what you see. We want to make it easier for you to understand what you're agreeing to when you use a service, and help you protect your rights.
+              </p>
+            </div>
 
-            <div className="project-website">
+            <div className="project-links">
               <div className="link-wrapper">
                 <div className="link">
-                  <a href="https://tldr-tos.vercel.app/">Visit Website</a>
+                  <a className="hyperlink" href="https://tldr-tos.vercel.app/">Visit Website</a>
+                </div>
+              </div>
+              <div className="link-wrapper">
+                <div className="link">
+                  <a className="hyperlink" href="https://github.com/TooLong-DidntRead/tldr_api">Visit Repository</a>
                 </div>
               </div>
             </div>
