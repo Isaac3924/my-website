@@ -474,8 +474,8 @@ a {
 }
 
 .tldr-main-pic{
-  width: 65vw;
-  height: 65vh;
+  width: 100%;
+  height: auto;
   border-radius: 0px 0px 96px 96px;
 }
 
