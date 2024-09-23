@@ -4,6 +4,7 @@ import mainpic from '../pictures/tldr_home.png';
 
 function TLDR() {
   const { menuVisible } = useMenu();
+  
   /*
   useEffect(() => {
     //Find the app element to modify its styles
@@ -16,7 +17,7 @@ function TLDR() {
   }, []);
   */
   return (
-    <div className={`page ${menuVisible ? 'menu-visible' : ''}`}>
+    <div id="project-tldr" className={`page ${menuVisible ? 'menu-visible' : ''}`}>
       <div className="project">
         <div className="project-wrapper">
           

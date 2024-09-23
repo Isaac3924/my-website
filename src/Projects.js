@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useMenu } from "./MenuContext";
+import { Link } from 'react-router-dom';
 import tldr from './pictures/tldr.png';
 import whether_sweater from './pictures/whether_sweater.png'
 import tea_subs from './pictures/tea_subs.png'
@@ -57,7 +58,7 @@ function Projects() {
                   () => handleMouseEnter(index)
                 } onMouseLeave={handleMouseLeave}
                 >
-                  <a href={`projects/${slug[0]}`}>
+                  <Link to={`/projects/${slug[0]}`}>
                     <div className="projects-row">
                       <div className="projects-row-left">
                         <h3>{`${slug[1]}`}</h3>
@@ -66,7 +67,7 @@ function Projects() {
                         <h4>{`${slug[2]}`}</h4>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
