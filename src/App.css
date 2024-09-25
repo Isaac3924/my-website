@@ -555,6 +555,7 @@ td{
   overflow-wrap: break-word;
   border-radius: 25px;
   border: #ffffff 3px dashed;
+  margin-bottom: 30px;
 }
 
 .project-paragraph{
@@ -580,7 +581,23 @@ td{
   border: 2px solid;
 }
 
+.link-wrapper:hover{
+  background: #81bedc;
+  text-align: center;
+  display: inline-block;
+  border: rgb(76, 76, 76) 2px solid;
+}
+
 .hyperlink{
   color: -webkit-link;
   text-decoration: underline;
+}
+
+.project-media {
+  text-align: center;
+}
+
+.tldr-input{
+  width: 100%;
+  height: auto;
 }

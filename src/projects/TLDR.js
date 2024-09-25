@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useMenu } from "../MenuContext";
 import mainpic from '../pictures/tldr_home.png';
+import input from '../pictures/tldr_input.png'
+import DriftBackground from "../components/driftingBackground";
 
 function TLDR() {
   const { menuVisible } = useMenu();
@@ -36,6 +38,20 @@ function TLDR() {
         </div>
 
         <div className="project-info">
+
+          <div className="project-summary">
+            <p className="project-paragraph">
+              A web platform that helps users understand the terms and conditions of services a user might sign up for in a simpler way. Instead of having to read through long and complex legal documents, a user can copy and paste them into the platform and select the things they're most concerned about i.e. privacy or recurring payments.
+            </p>
+
+            <p>
+              The platform will then show the user a summary of how those specific concerns might apply, with an overall score that helps the user see how a legal document rates in comparison to their selected concens. The application also gives suggestions for what the user can do if they don't like what they see. 
+            </p> 
+
+            <p>
+              The goal of this application was to make it easier for others to understand what they're agreeing to when they use a service, and help users protect their rights.
+            </p>
+          </div>
 
           <div className="project-data">
             <table className="table-tldr">
@@ -146,12 +162,6 @@ function TLDR() {
           </div>
 
           <div className="project-description">
-            <div className="project-summary">
-              <p className="project-paragraph">
-                A web platform that helps you understand the terms and conditions of services you sign up for in a simpler way. Instead of having to read through long and complex legal documents, you can copy and paste them into our platform and select the things you're most concerned about, like privacy or recurring payments. Our platform will then show you a summary of how those specific things might affect you, with an overall score that helps you see how good or bad they are. We also give you suggestions for what you can do if you don't like what you see. We want to make it easier for you to understand what you're agreeing to when you use a service, and help you protect your rights.
-              </p>
-            </div>
-
             <div className="project-links">
               <div className="link-wrapper">
                 <div className="link">
@@ -168,12 +178,17 @@ function TLDR() {
         </div>
 
         <div className="project-media">
-          <h6>Login</h6>
-          <div className="project-content-wrapper">
-            <img alt="Login screenshot"></img>
+          <div className="project-media-wrapper">
+            <div className="project-media-header-wrapper">
+              <h4>Terms of Service Input</h4>
+            </div>
+            <div className="project-media-content-wrapper">
+              <img className="tldr-input" src={input} alt="TL:DR TOS Input Page" />
+            </div>
           </div>
         </div>
       </div>
+      <DriftBackground />
     </div>
   );
 };

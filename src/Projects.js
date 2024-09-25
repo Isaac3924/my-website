@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMenu } from "./MenuContext";
 import { Link } from 'react-router-dom';
-import tldr from './pictures/tldr.png';
+import tldr from './pictures/tldr_output.png';
 import whether_sweater from './pictures/whether_sweater.png'
 import tea_subs from './pictures/tea_subs.png'
 import viewing_party from './pictures/viewing_party.png'
