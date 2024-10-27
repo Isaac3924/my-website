@@ -23,10 +23,10 @@ function Projects() {
 
   const projects_Array = [
     ["tldr", "TL:DR", "Python Web Application", tldr],
-    ["whether_sweater", "Whether-Sweater", "Ruby Back-End API Aggregate", whether_sweater],
-    ["tea_subs", "Tea Subs API", "Ruby Back-End API", tea_subs],
-    ["viewing_party", "Viewing Party", "Ruby Back-End DB Application", viewing_party],
-    ["little_esty_shop", "Little Esty Shop", "Ruby Back-End E-Commerce Application", little_esty_shop]
+    ["whether-sweater", "Whether-Sweater", "Ruby Back-End API Aggregate", whether_sweater],
+    ["tea-subs", "Tea Subs API", "Ruby Back-End API", tea_subs],
+    ["viewing-party", "Viewing Party", "Ruby Back-End DB Application", viewing_party],
+    ["little-esty-shop", "Little Esty Shop", "Ruby Back-End E-Commerce Application", little_esty_shop]
   ]
 
   return (

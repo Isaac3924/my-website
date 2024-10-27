@@ -5,6 +5,7 @@ import AboutMe from './AboutMe';
 import Projects from './Projects';
 import CodeChallenges from './CodeChallenges';
 import TLDR from './projects/TLDR';
+import WhetherSweater from './projects/WhetherSweater';
 import Navigation from './Navigation';
 import { MenuProvider } from './MenuContext';
 import linkedin from './pictures/linkedin.png';
@@ -33,6 +34,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/code-challenges" element={<CodeChallenges />} />
             <Route path="/projects/tldr" element={<TLDR/>} />
+            <Route path="/projects/whether-sweater" element={<WhetherSweater/>} />
           </Routes>
 
         </Router>

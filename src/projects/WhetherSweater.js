@@ -20,7 +20,7 @@ function TLDR() {
   }, []);
   */
   return (
-    <div id="project-tldr" className={`page ${menuVisible ? 'menu-visible' : ''}`}>
+    <div id="project-whether-sweater" className={`page ${menuVisible ? 'menu-visible' : ''}`}>
       <div className="project">
         <div className="project-wrapper">
           
@@ -28,13 +28,13 @@ function TLDR() {
 
         <div className="title-pic">
           <div className="title-pic-wrapper">
-            <img className="tldr-main-pic" src={mainpic} alt="TL:DR Home Page" />
+            <img className="whether-sweater-main-pic" src={mainpic} alt="TL:DR Home Page" />
           </div>
         </div>
         
         <div className="project-title">
           <div id="project-head" className="page-head">
-            <h1 className="page-title">TL:DR</h1>
+            <h1 className="page-title">Whether Sweater</h1>
           </div>
         </div>
 
@@ -42,15 +42,15 @@ function TLDR() {
 
           <div className="project-summary">
             <p className="project-paragraph">
-              A web platform that helps users understand the terms and conditions of services a user might sign up for in a simpler way. Instead of having to read through long and complex legal documents, a user can copy and paste them into the platform and select the things they're most concerned about i.e. privacy or recurring payments.
+              Whether Sweater is an API that aggregates data from multiple external APIs and exposes them through a JSON API with CRUD functionality. 
             </p>
 
             <p className="project-paragraph">
-              The platform will then show the user a summary of how those specific concerns might apply, with an overall score that helps the user see how a legal document rates in comparison to their selected concens. The application also gives suggestions for what the user can do if they don't like what they see. 
+              The application allows for the creation/registration of users and stores the information onto a database and the ability to login to said account with a JSON payload being returned that will have a generated API key for security.
             </p> 
 
             <p className="project-paragraph">
-              The goal of this application was to make it easier for others to understand what they're agreeing to when they use a service, and help users protect their rights.
+              The API is designed to allow users to plan out road trips by both displaying the current weather at their destination, and the forecasted weather for when they arrive by making use of MapQuest's API and the WeatherAPI.
             </p>
           </div>
 
@@ -68,22 +68,22 @@ function TLDR() {
                       <tbody>
                         <tr>
                           <td>
-                            Python
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            TypeScript
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            CSS
+                            Ruby on Rails
                           </td>
                         </tr>
                         <tr>
                           <td>
                             HTML
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            RSpec
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Postman
                           </td>
                         </tr>
                       </tbody>

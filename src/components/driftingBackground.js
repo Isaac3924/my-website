@@ -52,7 +52,7 @@ const DriftBackground = () => {
             detectsOn: "window",
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "repulse"
               },
               onHover: {
