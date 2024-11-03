@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { useMenu } from "../MenuContext";
+import Modal from "../components/Modal"
 import mainpic from '../pictures/tldr_home.png';
 import input from '../pictures/tldr_input.png'
 import output from '../pictures/tldr_output.png'
@@ -7,6 +8,15 @@ import DriftBackground from "../components/driftingBackground";
 
 function TLDR() {
   const { menuVisible } = useMenu();
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
+
+  const openModal = (image) => {
+    setModalImage(image);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => setModalOpen(false);
   
   /*
   useEffect(() => {
@@ -183,19 +193,32 @@ function TLDR() {
             <div className="project-media-header-wrapper">
               <h4>Terms of Service Input</h4>
             </div>
-            <div className="project-media-content-wrapper">
-              <img className="tldr-pic" src={input} alt="TL:DR TOS Input Page" />
+            <div
+              className="project-media-content-wrapper" 
+              onClick={() => openModal(input)}
+              style={{ cursor: "pointer" }} 
+              >
+                <img className="tldr-pic" src={input} alt="TL:DR TOS Input Page" />
             </div>
           </div>
           <div className="project-media-wrapper">
             <div className="project-media-header-wrapper">
               <h4>Summarized Output</h4>
             </div>
-            <div className="project-media-content-wrapper">
+            <div 
+              className="project-media-content-wrapper"
+              onClick={() => openModal(output)}
+              style={{ cursor: "pointer" }}
+            >
               <img className="tldr-pic" src={output} alt="TL:DR TOS Output Page" />
             </div>
           </div>
         </div>
+
+        <Modal isOpen={isModalOpen} onClose={closeModal}>
+          <img src={modalImage} alt="Project Preview" style={{ width: "100%" }} />
+        </Modal>
+
       </div>
       <DriftBackground />
     </div>

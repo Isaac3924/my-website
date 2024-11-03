@@ -646,6 +646,7 @@ td{
 .project-media-content-wrapper:hover{
   background: #696969;
   border: 2px outset;
+  cursor: pointer;
 }
 
 .tldr-pic{
