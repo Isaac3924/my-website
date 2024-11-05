@@ -38,7 +38,7 @@ function TLDR() {
 
         <div className="title-pic">
           <div className="title-pic-wrapper">
-            <img className="tldr-main-pic" src={mainpic} alt="TL:DR Home Page" />
+            <img className="main-pic" src={mainpic} alt="TL:DR Home Page" />
           </div>
         </div>
         
@@ -198,7 +198,7 @@ function TLDR() {
               onClick={() => openModal(input)}
               style={{ cursor: "pointer" }} 
             >
-              <img className="tldr-pic" src={input} alt="TL:DR TOS Input Page" />
+              <img className="media-pic" src={input} alt="TL:DR TOS Input Page" />
             </div>
           </div>
           <div className="project-media-wrapper">
@@ -210,7 +210,7 @@ function TLDR() {
               onClick={() => openModal(output)}
               style={{ cursor: "pointer" }} 
             >
-              <img className="tldr-pic" src={output} alt="TL:DR TOS Output Page" />
+              <img className="media-pic" src={output} alt="TL:DR TOS Output Page" />
             </div>
           </div>
         </div>

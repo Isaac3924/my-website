@@ -489,7 +489,7 @@ a {
   border-radius: 0px 0px 96px 96px;
 }
 
-.tldr-main-pic{
+.main-pic{
   width: 100%;
   height: auto;
   border-radius: 0px 0px 96px 96px;
@@ -649,7 +649,7 @@ td{
   cursor: pointer;
 }
 
-.tldr-pic{
+.media-pic{
   width: 100%;
   height: auto;
 }

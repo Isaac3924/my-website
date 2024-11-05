@@ -3,9 +3,9 @@ import {BrowserRouter as Router, Routes, Route, useLocation } from 'react-router
 import Home from './Home';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import ProjectPage from './components/projectPage'
+import projects from './projects/projectData';
 import CodeChallenges from './CodeChallenges';
-import TLDR from './projects/TLDR';
-import WhetherSweater from './projects/WhetherSweater';
 import Navigation from './Navigation';
 import { MenuProvider } from './MenuContext';
 import linkedin from './pictures/linkedin.png';
@@ -32,9 +32,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path ="/projects/:projectId" element={<ProjectPage project={projects.tldr} />} />
             <Route path="/code-challenges" element={<CodeChallenges />} />
-            <Route path="/projects/tldr" element={<TLDR/>} />
-            <Route path="/projects/whether-sweater" element={<WhetherSweater/>} />
           </Routes>
 
         </Router>
