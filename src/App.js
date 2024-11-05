@@ -32,7 +32,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path ="/projects/:projectId" element={<ProjectPage project={projects.tldr} />} />
+            <Route path ="/projects/:projectId" element={<ProjectPage />} />
             <Route path="/code-challenges" element={<CodeChallenges />} />
           </Routes>
 

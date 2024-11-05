@@ -1,12 +1,24 @@
 import React, { useState } from "react";
+import { useParams } from "react-router-dom";
 import { useMenu } from "../MenuContext";
 import Modal from "./Modal"
 import DriftBackground from "./driftingBackground";
+import projects from "../projects/projectData";
 
-function ProjectPage({ project }) {
+function ProjectPage() {
   const { menuVisible } = useMenu();
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState(null);
+
+  const { projectId } = useParams();
+  const project = projects[projectId];
+
+  console.log("projectId:", projectId);
+  console.log("project:", project);
+
+  if (!project) {
+    return <div>Project not found</div>
+  }
 
   const openModal = (image) => {
     setModalImage(image);
