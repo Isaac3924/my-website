@@ -4,6 +4,9 @@ import tldrOutputPic from '../pictures/tldr_output.png';
 import whetherSweaterMainPic from '../pictures/whether_sweater.png';
 import whetherSweaterForecastPic from '../pictures/whether_sweater_forecast_facade.png'
 import whetherSweaterRoadtripPic from '../pictures/whether_sweater_roadtrip_serializer.png'
+import teaSubsMainPic from '../pictures/tea_subs.png'
+import teaSubsSubcriptionController from '../pictures/tea_subs_subscriptions_controller.png'
+import teaSubsSchema from '../pictures/tea_subs_schema.png'
 
 const projects = {
   "tldr":{
@@ -56,7 +59,26 @@ const projects = {
       { title: 'Roadtrip Serializer', image: whetherSweaterRoadtripPic}
     ],
   },
-  
+  "tea-subs":{
+    id: 'tea-subs',
+    title: 'Tea Subs API',
+    mainImage: teaSubsMainPic,
+    description: [
+      "tea_subs_api is a back end application api that manages the subscriptions statusses of customers and tea flavors within said subscriptions.",
+      "It currently holds three endpoints that allows a front end user to call on them with provided information and see a proper return."
+    ],
+    techStack: ['Git', 'GitHub', 'PostgreSQL', 'Ruby on Rails'],
+    year: '2023',
+    team: [
+    ],
+    links: [
+      {site: 'https://github.com/Isaac3924/tea_subs_api', text: 'Visit Repository'},
+    ],
+    media: [
+      { title: 'Tea Subs Subscription Controller', image: teaSubsSubcriptionController},
+      { title: 'Tea Subs Schema', image: teaSubsSchema}
+    ],
+  },
 };
 
 export default projects;
