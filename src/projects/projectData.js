@@ -7,6 +7,12 @@ import whetherSweaterRoadtripPic from '../pictures/whether_sweater_roadtrip_seri
 import teaSubsMainPic from '../pictures/tea_subs.png'
 import teaSubsSubcriptionController from '../pictures/tea_subs_subscriptions_controller.png'
 import teaSubsSchema from '../pictures/tea_subs_schema.png'
+import viewingPartyMainPic from '../pictures/viewing_party.png'
+import viewingPartyUserController from '../pictures/viewing_party_user_controller.png'
+import viewingPartyUserFacade from '../pictures/viewing_party_user_facade.png'
+import littleEstyShopMainPic from '../pictures/little_esty_shop.png'
+import littleEstyShopInvoiceModel from '../pictures/little_esty_shop_invoice_model.png'
+import littleEstyShopMerchantsController from '../pictures/little_esty_shop_merchants_controller.png'
 
 const projects = {
   "tldr":{
@@ -77,6 +83,52 @@ const projects = {
     media: [
       { title: 'Tea Subs Subscription Controller', image: teaSubsSubcriptionController},
       { title: 'Tea Subs Schema', image: teaSubsSchema}
+    ],
+  },
+  "viewing-party":{
+    id: 'viewing-party',
+    title: 'Viewing Party',
+    mainImage: viewingPartyMainPic,
+    description: [
+      "Viewing Party Lite is an application in which users can explore movie options and create a viewing party event for themselves and other users of the application.",
+      "It holda a relational database for users to create their own accounts to show what movies they enjoy and schedule events with other users to watch them.",
+      "It utilizes user authentication as a security measure to allow certain permissions in the application."
+    ],
+    techStack: ['Git', 'GitHub', 'SQL', 'Ruby on Rails'],
+    year: '2023',
+    team: [
+      { name: 'Kara Jones-Hoffman', link: 'https://www.linkedin.com/in/81012911-91208/'}
+    ],
+    links: [
+      {site: 'https://github.com/Isaac3924/viewing_party_lite_7?tab=readme-ov-file', text: 'Visit Repository'},
+    ],
+    media: [
+      { title: 'Viewing Party User Contoller', image: viewingPartyUserController},
+      { title: 'Viewing Party User Facade', image: viewingPartyUserFacade}
+    ],
+  },
+  "little-esty-shop":{
+    id: 'little-esty-shop',
+    title: 'Little Esty Shop',
+    mainImage: littleEstyShopMainPic,
+    description: [
+      "A fictitious e-commerce platform where merchants and admins can manage inventory and fulfill customer invoices.",
+      "This application is meant to be an MVP for a small business that allows it to manage their customer data and web page.",
+      "Contains a number of relational databases and interacts with them via active record queries to extract specifc information from them."
+    ],
+    techStack: ['Git', 'GitHub', 'SQL', 'Ruby on Rails'],
+    year: '2023',
+    team: [
+      { name: 'Antonio King Hunt', link: 'https://www.linkedin.com/in/antoniokinghunt-software-developer/'},
+      { name: 'Bobby Luly', link: 'https://www.linkedin.com/in/bobby-luly-217653260/'},
+      { name: 'Jade Stewart', link: 'https://www.linkedin.com/in/jadestewart-software-engineer/'},
+    ],
+    links: [
+      {site: 'https://github.com/4D-Coder/little-esty-shop', text: 'Visit Repository'},
+    ],
+    media: [
+      { title: 'Little Esty Shop Invoice Model', image: littleEstyShopInvoiceModel},
+      { title: 'Little Esty Shop Merchants Controller', image: littleEstyShopMerchantsController}
     ],
   },
 };
