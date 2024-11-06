@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useMenu } from "./MenuContext";
-import tldr from './pictures/tldr.png';
+import { Link } from 'react-router-dom';
+import tldr from './pictures/tldr_output.png';
 import whether_sweater from './pictures/whether_sweater.png'
 import tea_subs from './pictures/tea_subs.png'
 import viewing_party from './pictures/viewing_party.png'
@@ -22,10 +23,10 @@ function Projects() {
 
   const projects_Array = [
     ["tldr", "TL:DR", "Python Web Application", tldr],
-    ["whether_sweater", "Whether-Sweater", "Ruby Back-End API Aggregate", whether_sweater],
-    ["tea_subs", "Tea Subs API", "Ruby Back-End API", tea_subs],
-    ["viewing_party", "Viewing Party", "Ruby Back-End DB Application", viewing_party],
-    ["little_esty_shop", "Little Esty Shop", "Ruby Back-End E-Commerce Application", little_esty_shop]
+    ["whether-sweater", "Whether-Sweater", "Ruby Back-End API Aggregate", whether_sweater],
+    ["tea-subs", "Tea Subs API", "Ruby Back-End API", tea_subs],
+    ["viewing-party", "Viewing Party", "Ruby Back-End DB Application", viewing_party],
+    ["little-esty-shop", "Little Esty Shop", "Ruby Back-End E-Commerce Application", little_esty_shop]
   ]
 
   return (
@@ -57,7 +58,7 @@ function Projects() {
                   () => handleMouseEnter(index)
                 } onMouseLeave={handleMouseLeave}
                 >
-                  <a href={`projects/${slug[0]}`}>
+                  <Link to={`/projects/${slug[0]}`}>
                     <div className="projects-row">
                       <div className="projects-row-left">
                         <h3>{`${slug[1]}`}</h3>
@@ -66,7 +67,7 @@ function Projects() {
                         <h4>{`${slug[2]}`}</h4>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

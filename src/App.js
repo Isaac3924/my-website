@@ -1,10 +1,11 @@
-import React from 'react';
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import {BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './Home';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import ProjectPage from './components/projectPage'
+import projects from './projects/projectData';
 import CodeChallenges from './CodeChallenges';
-import TLDR from './projects/TLDR';
 import Navigation from './Navigation';
 import { MenuProvider } from './MenuContext';
 import linkedin from './pictures/linkedin.png';
@@ -31,8 +32,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path ="/projects/:projectId" element={<ProjectPage />} />
             <Route path="/code-challenges" element={<CodeChallenges />} />
-            <Route path="/projects/tldr" element={<TLDR/>} />
           </Routes>
 
         </Router>
