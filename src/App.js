@@ -5,7 +5,6 @@ import AboutMe from './AboutMe';
 import Projects from './Projects';
 import ProjectPage from './components/projectPage'
 import projects from './projects/projectData';
-import CodeChallenges from './CodeChallenges';
 import Navigation from './Navigation';
 import { MenuProvider } from './MenuContext';
 import linkedin from './pictures/linkedin.png';
@@ -33,7 +32,6 @@ function App() {
             <Route path="/about" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
             <Route path ="/projects/:projectId" element={<ProjectPage />} />
-            <Route path="/code-challenges" element={<CodeChallenges />} />
           </Routes>
 
         </Router>
